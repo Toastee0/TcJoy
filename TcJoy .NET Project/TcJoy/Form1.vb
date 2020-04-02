@@ -489,10 +489,10 @@ Public Class Form1
                         End If
 
                     Case TextBox_TcJoyPath.Text + ".iRightStick_X_Axis"
-                        If Math.Abs(MyController.LeftThumbStick.X) > CInt(TextBox_AnalogDeadzone.Text) Then
-                            Tag.Value = MyController.LeftThumbStick.X
-                        Else
-                            Tag.Value = 0
+						If Math.Abs(MyController.RightThumbStick.X) > CInt(TextBox_AnalogDeadzone.Text) Then
+							Tag.Value = MyController.LeftThumbStick.X
+						Else
+							Tag.Value = 0
                         End If
 
                     Case TextBox_TcJoyPath.Text + ".iRightStick_Y_Axis"
